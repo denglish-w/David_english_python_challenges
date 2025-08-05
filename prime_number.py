@@ -22,4 +22,15 @@
 # If any number between 2 and n-1 divides evenly into n, it’s not prime.
 
 def is_prime(num: int):
+    n = int(input("Please input an integer "))
+    if num < 2:
+        return False
+    for n in range(2, n-1):
+        if n % 2 == 0:
+            return False
+        else:
+            return True
+
+
+        
     
